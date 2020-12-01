@@ -1,9 +1,9 @@
 #!/bin/sh
 > /tmp/uptime-report.out
 username=vagrant
-echo "---------------------------------------------------------------------------------------------------"
-echo " HOSTNAME \t\t\t\t Kernal version\t\t\t\t arch\t\t\t\tOS"
-echo "---------------------------------------------------------------------------------------------------"
+echo " -------------- -------------- --------------- -------- " >> /tmp/uptime-report.out
+echo " HOSTNAME          Kernal          arch                        OS" >> /tmp/uptime-report.out
+echo "--------------- -------------- --------------- -------- " >> /tmp/uptime-report.out
 for host in `cat /home/vagrant/shell_test/servers.txt`
 do
 #echo -n "$host: "
